@@ -346,7 +346,7 @@ body {
 	column-gap: 24px;
 }
 
-.customers-item {
+.customers-link {
 	display: flex;
 	height: 88px;
 	width: 168px;
@@ -356,14 +356,17 @@ body {
 	align-items: center;
 }
 
+.customers-link:hover,
+.customers-link:focus {
+	border: 1px solid var(--accent-color);
+}
+
+.customers-icon {
+	fill: #8e8f99;
+}
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
 	fill: var(--accent-color);
-}
-
-.customers-item:hover,
-.customers-item:focus {
-	border: 1px solid var(--accent-color);
 }
 
 /*=================== footer =======================*/
