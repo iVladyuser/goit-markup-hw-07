@@ -318,6 +318,7 @@ body {
 	column-gap: 24px;
 	margin-top: 8px;
 }
+
 .social-list-link {
 	display: flex;
 	width: 40px;
@@ -368,9 +369,10 @@ body {
 .customers-icon {
 	fill: currentColor;
 }
+
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
-	fill: var(--accent-color);
+	color: #404bbf;
 }
 
 /*=================== footer =======================*/
@@ -384,8 +386,11 @@ body {
 .container-footer {
 	display: flex;
 	justify-content: flex-start;
-	gap: 120px;
 	align-items: baseline;
+}
+
+.footer-logo {
+	margin-right: 120px;
 }
 
 .link-footer {
