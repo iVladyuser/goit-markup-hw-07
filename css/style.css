@@ -315,8 +315,8 @@ body {
 .social-list {
 	display: flex;
 	justify-content: center;
-	column-gap: 24px;
 	margin-top: 8px;
+	gap: 24px;
 }
 
 .social-list-link {
@@ -361,13 +361,14 @@ body {
 	color: var(--icons-color);
 }
 
+.customers-icon {
+	fill: currentColor;
+}
+
 .customers-link:hover,
 .customers-link:focus {
 	border: 1px solid #404bbf;
-}
-
-.customers-icon {
-	fill: currentColor;
+	color: #404bbf;
 }
 
 .customers-link:hover .customers-icon,
