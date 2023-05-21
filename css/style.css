@@ -152,7 +152,7 @@ body {
 
 .menu {
 	display: flex;
-	font-weight: 500px;
+	font-weight: 500;
 	gap: 40px;
 }
 
@@ -192,7 +192,6 @@ body {
 .contacts {
 	margin-left: auto;
 	font-style: normal;
-	font-weight: 400px;
 }
 
 .contacts-link {
@@ -239,7 +238,6 @@ body {
 	margin-top: 48px;
 	border-radius: 4px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	transition-property: background-color;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -477,7 +475,6 @@ body {
 	background-color: var(--cloud-color);
 	color: var(--iris-color);
 	border: 1px solid var(--border-button);
-	transition-property: background-color, color, border, box-shadow;
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -586,12 +583,10 @@ body {
 	transform: translate(-50%, -50%);
 	width: 408px;
 	min-height: 576px;
-
 	background: #fcfcfc;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
-	transition-property: transform;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -605,11 +600,19 @@ body {
 	width: 24px;
 	height: 24px;
 	padding: 0;
+	fill: #000;
 	background-color: var(--border-button);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+	background-color: var(--accent-color);
+	border: none;
+	fill: #fff;
 }
 
 .is-hidden {
@@ -618,14 +621,6 @@ body {
 	pointer-events: none;
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-	background-color: var(--accent-color);
-	border: none;
-	fill: #ffffff;
-}
-
 .icon-close {
-	transition-property: fill;
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
