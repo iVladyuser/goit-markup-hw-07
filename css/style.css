@@ -456,9 +456,12 @@ body {
 	background-color: #31d0aa;
 }
 
-.subscribe-box {
+.subscribe-form {
 	display: flex;
-	gap: 24px;
+}
+
+.subscribe-form-field-wrapper {
+	margin-bottom: 24px;
 }
 
 .subscribe-form-email {
@@ -696,10 +699,6 @@ body {
 }
 .contact-form-field-wrapper {
 	position: relative;
-	display: block;
-}
-
-.contact-form-field-desc {
 	display: block;
 	font-size: 12px;
 	line-height: 1.17;
