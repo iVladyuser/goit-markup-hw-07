@@ -430,6 +430,10 @@ body {
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.team-social-list {
+	margin-right: 80px;
+}
+
 .description-footer {
 	font-weight: 500;
 	line-height: 1.5;
@@ -450,6 +454,54 @@ body {
 .social-footer-link:hover,
 .social-footer-link:focus {
 	background-color: #31d0aa;
+}
+
+.subscribe-box {
+	display: flex;
+	gap: 24px;
+}
+
+.subscribe-form-email {
+	width: 264px;
+	height: 40px;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	border-radius: 4px;
+	padding-left: 16px;
+	outline: none;
+	background-color: transparent;
+}
+
+.subscribe-form-email::placeholder {
+	color: #fff;
+}
+
+.subscribe-btn {
+	display: flex;
+	align-items: center;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	color: var(--primary-text-color-theme-dark);
+	background-color: var(--iris-color);
+	padding: 8px 24px;
+	width: 165px;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:focus,
+.subscribe-btn:hover {
+	background-color: var(--accent-color);
+}
+
+.subscribe-icon-container {
+	width: 24px;
+	height: 24px;
+	padding: 2px 0;
+	margin-left: 16px;
 }
 
 /*===================portfolio =======================*/
@@ -581,6 +633,7 @@ body {
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	padding: 72px 24px 24px;
 }
 
 .modal-close-btn {
@@ -623,4 +676,153 @@ body {
 
 .icon-close {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form {
+}
+
+.subtitle-form {
+	font-family: Roboto;
+	font-weight: 500;
+	margin-bottom: 16px;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 2%;
+	color: var(--title-color);
+	text-align: center;
+	/* transition: ; */
+}
+
+.contact-form-field-wrapper,
+.contact-form-checkbox-wrapper {
+	display: block;
+	margin-bottom: 8px;
+}
+.contact-form-field-wrapper {
+	position: relative;
+	display: block;
+}
+
+.contact-form-field-desc {
+	display: block;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 4%;
+	color: var(--icons-color);
+	margin-bottom: 4px;
+}
+
+.contact-form-input {
+	width: 100%;
+	height: 40px;
+	border: 1px solid rgba(46, 47, 66, 0.4);
+	border-radius: 4px;
+	padding-left: 38px;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-input:focus,
+.contact-form-massage:focus {
+	outline: none;
+	border-color: var(--iris-color);
+}
+.contact-form-input-wrapper {
+	position: relative;
+	display: block;
+}
+
+.contact-form-input-icon {
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	transform: translateY(-50%);
+	fill: var(--title-color);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-input:focus + .contact-form-input-icon {
+	fill: var(--iris-color);
+}
+
+.contact-form-massage {
+	height: 120px;
+	width: 100%;
+	padding: 8px 16px;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 4%;
+	resize: none;
+	border-radius: 4px;
+	color: rgba(46, 47, 66, 0.4);
+	border: 1px solid rgba(46, 47, 66, 0.4);
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-massage::placeholder {
+	color: rgba(46, 47, 66, 0.4);
+}
+
+.contact-form-checkbox-wrapper {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 4%;
+	color: var(--icons-color);
+}
+
+.contact-form-checkbox {
+	position: absolute;
+	appearance: none;
+}
+
+.contact-form-own-checkbox {
+	border: 1px solid rgba(46, 47, 66, 0.4);
+	border-radius: 2px;
+	padding: 4px 3px;
+	cursor: pointer;
+	margin-right: 8px;
+}
+
+.contact-form-checkmark-icon {
+	opacity: 0;
+}
+
+.contact-form-checkbox:checked + .contact-form-own-checkbox {
+	background-color: var(--accent-color);
+}
+
+.contact-form-checkbox:checked
+	+ .contact-form-own-checkbox
+	.contact-form-checkmark-icon {
+	opacity: 1;
+	fill: var(--cloud-color);
+}
+
+.link-policy {
+	color: var(--iris-color);
+	margin-left: 5px;
+	text-decoration-line: underline;
+}
+
+.contact-form-submit {
+	display: block;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	color: var(--primary-text-color-theme-dark);
+	background-color: var(--iris-color);
+	padding: 16px 32px;
+	margin: 0 auto;
+	min-width: 169px;
+	margin-top: 24px;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-submit:focus,
+.contact-form-submit:hover {
+	background-color: var(--accent-color);
 }
