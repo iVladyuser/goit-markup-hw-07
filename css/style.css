@@ -744,6 +744,10 @@ body {
 	margin-bottom: 16px;
 }
 
+.contact-form-box-name {
+	margin-bottom: 8px;
+}
+
 .contact-form-massage {
 	height: 120px;
 	width: 100%;
