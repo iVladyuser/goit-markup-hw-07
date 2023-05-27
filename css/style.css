@@ -696,23 +696,14 @@ body {
 	text-align: center;
 }
 
-.contact-form-box {
-	margin-bottom: 8px;
-}
-
-.contact-form-field-wrapper,
-.contact-form-checkbox-wrapper {
-	display: block;
-	letter-spacing: 0.04em;
-}
-
 .contact-form-field-wrapper {
-	position: relative;
 	display: block;
+	position: relative;
 	font-size: 12px;
 	line-height: 1.17;
 	color: var(--icons-color);
 	margin-bottom: 4px;
+	letter-spacing: 0.04em;
 }
 
 .contact-form-input {
@@ -749,17 +740,23 @@ body {
 	fill: var(--iris-color);
 }
 
+.contact-form-box {
+	margin-bottom: 16px;
+}
+
 .contact-form-massage {
 	height: 120px;
 	width: 100%;
 	padding: 8px 16px;
 	font-size: 12px;
 	line-height: 1.17;
-	letter-spacing: 4%;
+	letter-spacing: 0.04em;
 	resize: none;
 	border-radius: 4px;
 	color: rgba(46, 47, 66, 0.4);
-	border: 1px solid rgba(46, 47, 66, 0.4);
+	border: 1px solid rgba(46, 47, 66, 0.2);
+	background-color: transparent;
+	outline: transparent;
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -767,34 +764,38 @@ body {
 	color: rgba(46, 47, 66, 0.4);
 }
 
-.contact-form-checkbox-wrapper {
+.contact-form-checkbox {
 	display: flex;
 	align-items: center;
 	font-size: 12px;
 	line-height: 1.17;
-	letter-spacing: 4%;
 	color: var(--icons-color);
-}
-
-.contact-form-checkbox {
-	position: absolute;
-	appearance: none;
+	margin-bottom: 24px;
 }
 
 .contact-form-own-checkbox {
-	border: 1px solid rgba(46, 47, 66, 0.4);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #2e2f42;
 	border-radius: 2px;
 	padding: 4px 3px;
 	cursor: pointer;
 	margin-right: 8px;
+	fill: transparent;
 }
 
 .contact-form-checkmark-icon {
 	opacity: 0;
 }
 
-.contact-form-checkbox:checked + .contact-form-own-checkbox {
+.contact-form-checkbox-wrapper:checked + .contact-form-own-checkbox {
 	background-color: var(--accent-color);
+	border: none;
+	fill: var(--main-background-color);
+	border-color: var(--accent-color);
 }
 
 .contact-form-checkbox:checked
@@ -806,7 +807,6 @@ body {
 
 .link-policy {
 	color: var(--iris-color);
-	margin-left: 5px;
 	text-decoration-line: underline;
 }
 
