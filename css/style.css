@@ -796,16 +796,19 @@ body {
 	opacity: 0;
 }
 
-.contact-form-checkbox:checked + .contact-form-own-checkbox {
+.contact-form-checkbox:checked
+	+ .contact-form-field-wrapper
+	> .contact-form-own-checkbox {
 	background-color: var(--accent-color);
 	border: none;
 	fill: var(--main-background-color);
 	border-color: var(--accent-color);
 }
 
-.contact-form-checkbox-wrapper:checked
-	+ .contact-form-own-checkbox
-	.contact-form-checkmark-icon {
+.contact-form-checkbox:checked
+	+ .contact-form-field-wrapper
+	> .contact-form-own-checkbox
+	> .contact-form-checkmark-icon {
 	opacity: 1;
 	fill: var(--cloud-color);
 }
