@@ -741,11 +741,11 @@ body {
 }
 
 .contact-form-box {
-	margin-bottom: 16px;
+	margin-bottom: 8px;
 }
 
-.contact-form-box-name {
-	margin-bottom: 8px;
+.contact-form-massage-box {
+	margin-bottom: 16px;
 }
 
 .contact-form-massage {
