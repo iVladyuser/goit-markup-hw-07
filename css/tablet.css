@@ -1,0 +1,61 @@
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 736px;
+	}
+
+	.mail-tel {
+		display: block;
+	}
+
+	.header-container {
+		justify-content: space-between;
+	}
+
+	.logo-header {
+		margin-right: 0;
+	}
+
+	.mail-tel {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		font-size: 12px;
+		line-height: 1.166;
+		letter-spacing: 0.04em;
+	}
+}
+
+/*=================== hero =======================*/
+.hero {
+	padding-top: 40px;
+	background-image: linear-gradient(
+			rgba(46, 47, 66, 0.7),
+			rgba(46, 47, 66, 0.7)
+		),
+		url(../images/hero-bg/hero-bg-tablet.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+	screen and (min-resolution: 192dpi),
+	screen and (min-resolution: 2dppx) {
+	.hero {
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/hero-bg/hero-bg-tablet2x.jpg);
+	}
+}
+
+/*=================== about =======================*/
+.list-about {
+	flex-wrap: wrap;
+	row-gap: 72px;
+	column-gap: 24px;
+}
+
+.item-about {
+	width: calc((100% - 24px) / 2);
+}
