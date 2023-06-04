@@ -77,3 +77,39 @@
 }
 
 /*==================== footer =========================*/
+
+.footer-wrapper,
+.subscribe-form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 24px;
+}
+
+.social-footer,
+.subscribe-footer {
+	text-align: left;
+}
+
+.subscribe-footer {
+	margin-left: 76px;
+}
+
+.footer-logo {
+	justify-self: end;
+}
+
+.container-footer .social-list {
+	justify-content: flex-start;
+}
+
+.description-footer {
+	margin-bottom: 0;
+}
+
+.subscribe-form-field-wrapper {
+	justify-self: end;
+}
+
+.subscribe-btn {
+	margin: 0;
+}

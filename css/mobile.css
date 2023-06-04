@@ -7,6 +7,11 @@
 	display: none;
 }
 
+.logo-header {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
 .contacts {
 	display: none;
 }
@@ -192,6 +197,12 @@
 /*==================== footer =========================*/
 .container-footer {
 	flex-direction: column;
+	max-width: 100%;
+}
+
+.footer-wrapper {
+	display: flex;
+	flex-direction: column;
 }
 
 .subscribe-form {
@@ -204,14 +215,14 @@
 	margin-left: auto;
 }
 
-.description-footer {
+.social-footer,
+.subscribe-footer {
 	text-align: center;
 }
-
 .subscribe-form-box {
 	justify-content: center;
+	width: 100%;
 }
-
 .container-footer {
 	display: flex;
 	justify-content: center;
@@ -219,4 +230,11 @@
 }
 .subscribe-form-email {
 	margin-bottom: 16px;
+	width: 100%;
+}
+
+.link-footer {
+	display: block;
+	text-align: center;
+	margin-bottom: 17.5px;
 }

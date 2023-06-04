@@ -75,12 +75,33 @@
 }
 
 /*==================== footer =========================*/
+.footer {
+	padding: 100px 0;
+}
 .container-footer {
 	display: flex;
 	justify-content: flex-start;
 	align-items: baseline;
+	column-gap: 80px;
 }
 
 .subscribe-form-email {
 	padding-left: 16px;
+}
+
+.footer-wrapper {
+	display: flex;
+	column-gap: 120px;
+}
+
+.subscribe-form {
+	column-gap: 24px;
+}
+
+.description-footer {
+	margin-bottom: 0;
+}
+
+.subscribe-footer {
+	margin-top: 0;
 }
