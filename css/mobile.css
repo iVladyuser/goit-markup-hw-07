@@ -175,3 +175,48 @@
 .subtitle {
 	text-align: center;
 }
+
+/*=================== our-team =======================*/
+.team-list {
+	flex-direction: column;
+	gap: 72px;
+}
+
+/*=================== customers =======================*/
+.customers-list {
+	flex-wrap: wrap;
+	row-gap: 72px;
+	column-gap: 16px;
+}
+
+/*==================== footer =========================*/
+.container-footer {
+	flex-direction: column;
+}
+
+.subscribe-form {
+	flex-direction: column;
+}
+
+.footer-logo,
+.team-social-list {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.description-footer {
+	text-align: center;
+}
+
+.subscribe-form-box {
+	justify-content: center;
+}
+
+.container-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.subscribe-form-email {
+	margin-bottom: 16px;
+}

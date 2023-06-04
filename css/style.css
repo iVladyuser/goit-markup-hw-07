@@ -135,12 +135,6 @@ body {
 	text-transform: uppercase;
 }
 
-.logo-header {
-	padding-top: 24px;
-	padding-bottom: 24px;
-	margin-right: 76px;
-}
-
 .logo:visited {
 	color: var(--iris-color);
 }
@@ -268,9 +262,6 @@ body {
 }
 
 /*=================== in-progress =======================*/
-.in-progress {
-	padding-bottom: 120px;
-}
 
 .progress-list {
 	gap: 24px;
@@ -284,12 +275,11 @@ body {
 
 .team-list {
 	display: flex;
-	gap: 24px;
 }
 
 .team-item {
+	width: 264px;
 	background-color: #ffffff;
-	width: calc((100% - (3 * 24px)) / 4);
 	border-radius: 0px 0px 4px 4px;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 		0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -381,23 +371,12 @@ body {
 .footer {
 	background-color: var(--title-color);
 	color: var(--cloud-color);
-	padding: 100px 0;
-}
-
-.container-footer {
-	display: flex;
-	justify-content: flex-start;
-	align-items: baseline;
 }
 
 .footer-logo {
 	margin-right: 120px;
 }
 
-.link-footer {
-	display: inline-block;
-	margin-bottom: 16px;
-}
 .span-web-footer {
 	color: var(--cloud-color);
 
@@ -448,7 +427,6 @@ body {
 	border: 1px solid #ffffff;
 	color: #ffffff;
 	border-radius: 4px;
-	padding-left: 16px;
 	outline: none;
 	background-color: transparent;
 }

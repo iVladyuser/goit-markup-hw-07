@@ -32,7 +32,13 @@
 	}
 }
 
-/*=================== about =======================*/
+.logo-header {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	margin-right: 76px;
+}
+
+/*===================== about =======================*/
 .section {
 	padding-top: 120px;
 	padding-bottom: 120px;
@@ -55,4 +61,26 @@
 	background-color: var(--cloud-color);
 	margin-bottom: 8px;
 	border-radius: 4px;
+}
+
+/*==================== in-progress =======================*/
+
+/*==================== our-team =========================*/
+.team-list {
+	gap: 24px;
+}
+
+.team-item {
+	width: calc((100% - (3 * 24px)) / 4);
+}
+
+/*==================== footer =========================*/
+.container-footer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+.subscribe-form-email {
+	padding-left: 16px;
 }
