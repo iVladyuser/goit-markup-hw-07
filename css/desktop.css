@@ -98,10 +98,29 @@
 	column-gap: 24px;
 }
 
-.description-footer {
-	margin-bottom: 0;
-}
-
 .subscribe-footer {
 	margin-top: 0;
+}
+
+/*===================portfolio =======================*/
+.portfolio {
+	padding-top: 96px;
+	padding-bottom: 120px;
+}
+
+.filter-list {
+	display: flex;
+	margin-bottom: 72px;
+	justify-content: center;
+}
+
+.works {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 24px;
+	row-gap: 48px;
+}
+
+.works-item {
+	width: calc((100% - 48px) / 3);
 }

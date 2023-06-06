@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
 	.container {
-		max-width: 736px;
+		max-width: 768px;
 	}
 
 	.mail-tel {
@@ -66,7 +66,7 @@
 	flex-wrap: wrap;
 	row-gap: 64px;
 	column-gap: 24px;
-	margin: 0 auto;
+	justify-content: center;
 }
 
 /*=================== customers =======================*/
@@ -78,10 +78,12 @@
 
 /*==================== footer =========================*/
 
+.footer-wrapper {
+	display: flex;
+}
+
 .footer-wrapper,
 .subscribe-form {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
 	column-gap: 24px;
 }
 
@@ -90,15 +92,15 @@
 	text-align: left;
 }
 
-.subscribe-footer {
-	margin-left: 76px;
+.container-footer {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 72px;
+	justify-content: flex-start;
+	max-width: 550px;
 }
 
-.footer-logo {
-	justify-self: end;
-}
-
-.container-footer .social-list {
+.social-list-footer {
 	justify-content: flex-start;
 }
 
@@ -106,10 +108,29 @@
 	margin-bottom: 0;
 }
 
-.subscribe-form-field-wrapper {
-	justify-self: end;
-}
-
 .subscribe-btn {
 	margin: 0;
+}
+
+/*===================portfolio =======================*/
+.portfolio {
+	padding-top: 64px;
+	padding-bottom: 96px;
+}
+
+.filter-list {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 64px;
+}
+
+.works {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 72px;
+	column-gap: 24px;
+}
+
+.works-item {
+	width: calc((100% - 24px) / 2);
 }

@@ -8,25 +8,51 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
-			rel="stylesheet" />
+			rel="stylesheet"
+		/>
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-		<link rel="stylesheet" href="./css/style.css" />
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+		/>
 		<title>Portfolio</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<link
+			rel="stylesheet"
+			href="./css/mobile.css"
+			media="screen and (max-width:767.9px)"
+		/>
+		<link
+			rel="stylesheet"
+			href="./css/tablet.css"
+			media="screen and (min-width:768px) and (max-width:1157.99px)"
+		/>
+		<link
+			rel="stylesheet"
+			href="./css/desktop.css"
+			media="screen and (min-width:1158px)"
+		/>
 	</head>
 	<body>
 		<header class="page-header">
 			<div class="container header-container">
+				<a class="link logo logo-header" href="./index.html"
+					>Web<span class="span-web">Studio</span></a
+				>
 				<nav class="nav-header">
-					<a class="link logo logo-header" href="./index.html"
-						>Web<span class="span-web">Studio</span></a
-					>
 					<ul class="menu list">
 						<li class="menu-item">
 							<a class="menu-link link" href="./index.html">Studio</a>
 						</li>
-						<li class="menu-item page-viewport">
+						<li class="menu-item">
 							<a class="menu-link page-viewport-link" href="./portfolio.html"
 								>Portfolio</a
 							>
@@ -36,6 +62,11 @@
 						</li>
 					</ul>
 				</nav>
+				<button class="mobile-menu-open-btn js-open-menu" type="button">
+					<svg class="mobile-menu-open-btn-icon" width="32" height="22">
+						<use href="./images/icons.svg#icon-mobile-menu"></use>
+					</svg>
+				</button>
 				<address class="contacts">
 					<ul class="mail-tel list">
 						<li class="menu-item">
@@ -50,6 +81,90 @@
 						</li>
 					</ul>
 				</address>
+			</div>
+			<div class="mobile-menu js-menu-container">
+				<div class="container mobile-menu-container">
+					<button class="mobile-menu-close-btn js-close-menu">
+						<svg class="mobile-menu-btn-icon" height="8" width="8">
+							<use href="./images/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+					<ul class="menu list">
+						<li class="menu-item">
+							<a class="menu-link" href="./index.html">Studio</a>
+						</li>
+						<li class="menu-item">
+							<a class="menu-link page-viewport-link" href="./portfolio.html"
+								>Portfolio</a
+							>
+						</li>
+						<li class="menu-item">
+							<a class="menu-link" href="">Contacts</a>
+						</li>
+					</ul>
+					<div class="container-bottom">
+						<ul>
+							<li class="menu-item-tel">
+								<a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+							</li>
+							<li class="menu-item-email">
+								<a class="link" href="mailto:info@devstudio.com"
+									>info@devstudio.com</a
+								>
+							</li>
+						</ul>
+						<ul class="social-list list">
+							<li class="social-list-icon">
+								<a class="social-list-link social-footer-link" href="#">
+									<svg
+										class="social-list-icon"
+										aria-label="icon-instagram"
+										height="24"
+										width="24"
+									>
+										<use href="./images/icons.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-list-icon">
+								<a class="social-list-link social-footer-link" href="#">
+									<svg
+										class="social-list-icon"
+										aria-label="icon-instagram"
+										height="24"
+										width="24"
+									>
+										<use href="./images/icons.svg#icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-list-icon">
+								<a class="social-list-link social-footer-link" href="#">
+									<svg
+										class="social-list-icon"
+										aria-label="icon-instagram"
+										height="24"
+										width="24"
+									>
+										<use href="./images/icons.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-list-icon">
+								<a class="social-list-link social-footer-link" href="#">
+									<svg
+										class="social-list-icon"
+										aria-label="icon-linkedin"
+										height="24"
+										width="24"
+									>
+										<use href="./images/icons.svg#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -77,10 +192,28 @@
 						<li class="works-item">
 							<a href="" class="works-link link">
 								<div class="works-img-wrapper">
-									<img
-										class="works-img"
-										src="./images/works/BankApp.jpg"
-										alt="violet-app" />
+									<picture>
+										<source
+											media=""
+											srcset="
+												./images/works/bank-app.webp    1x,
+												./images/works/bank-app@2x.webp 2x
+											"
+											type="image/webp"
+										/>
+										<source
+											media=""
+											srcset="
+												./images/works/bank-app.jpg    1x,
+												./images/works/bank-app@2x.jpg 2x
+											"
+										/>
+										<img
+											class="works-img"
+											src="./images/works/bank-app.jpg"
+											alt="violet-app"
+										/>
+									</picture>
 									<p class="overlay">
 										14 Stylish and User-Friendly App Design Concepts · Task
 										Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -96,10 +229,28 @@
 						<li class="works-item">
 							<a href="" class="works-link link">
 								<div class="works-img-wrapper">
-									<img
-										class="works-img"
-										src="./images/works/qrcode.jpg"
-										alt="qr-pay" />
+									<picture>
+										<source
+											media=""
+											srcset="
+												./images/works/qrcode.webp    1x,
+												./images/works/qrcode@2x.webp 2x
+											"
+											type="image/webp"
+										/>
+										<source
+											media=""
+											srcset="
+												./images/works/qrcode.jpg    1x,
+												./images/works/qrcode@2x.jpg 2x
+											"
+										/>
+										<img
+											class="works-img"
+											src="./images/works/qrcode.jpg"
+											alt="qr-pay"
+										/>
+									</picture>
 									<p class="overlay">
 										14 Stylish and User-Friendly App Design Concepts · Task
 										Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -115,10 +266,28 @@
 						<li class="works-item">
 							<a href="" class="works-link link">
 								<div class="works-img-wrapper">
-									<img
-										class="works-img"
-										src="./images/works/adaptive.jpg"
-										alt="laptop-phone" />
+									<picture>
+										<source
+											media=""
+											srcset="
+												./images/works/adaptive.webp    1x,
+												./images/works/adaptive@2x.webp 2x
+											"
+											type="image/webp"
+										/>
+										<source
+											media=""
+											srcset="
+												./images/works/adaptive.jpg    1x,
+												./images/works/adaptive@2x.jpg 2x
+											"
+										/>
+										<img
+											class="works-img"
+											src="./images/works/adaptive.jpg"
+											alt="laptop-phone"
+										/>
+									</picture>
 									<p class="overlay">
 										14 Stylish and User-Friendly App Design Concepts · Task
 										Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -135,10 +304,28 @@
 						<li class="works-item">
 							<a href="" class="works-link link">
 								<div class="works-img-wrapper">
-									<img
-										class="works-img"
-										src="./images/works/taxi.jpg"
-										alt="black-taxi" />
+									<picture>
+										<source
+											media="(min-width:1158px)"
+											srcset="
+												./images/works/taxi.webp    1x,
+												./images/works/taxi@2x.webp 2x
+											"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width:1158px)"
+											srcset="
+												./images/works/taxi.jpg    1x,
+												./images/works/taxi@2x.jpg 2x
+											"
+										/>
+										<img
+											class="works-img"
+											src="./images/works/taxi.jpg"
+											alt="black-taxi"
+										/>
+									</picture>
 									<p class="overlay">
 										14 Stylish and User-Friendly App Design Concepts · Task
 										Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -154,10 +341,28 @@
 						<li class="works-item">
 							<a href="" class="works-link link">
 								<div class="works-img-wrapper">
-									<img
-										class="works-img"
-										src="./images/works/screen.jpg"
-										alt="moon-screen" />
+									<picture>
+										<source
+											media=""
+											srcset="
+												./images/works/screen.webp    1x,
+												./images/works/screen@2x.webp 2x
+											"
+											type="image/webp"
+										/>
+										<source
+											media=""
+											srcset="
+												./images/works/screen.jpg    1x,
+												./images/works/screen@2x.jpg 2x
+											"
+										/>
+										<img
+											class="works-img"
+											src="./images/works/screen.jpg"
+											alt="moon-screen"
+										/>
+									</picture>
 									<p class="overlay">
 										14 Stylish and User-Friendly App Design Concepts · Task
 										Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -173,10 +378,28 @@
 						<li class="works-item">
 							<a href="" class="works-link link">
 								<div class="works-img-wrapper">
-									<img
-										class="works-img"
-										src="./images/works/orange-girl.jpg"
-										alt="girl-headphones" />
+									<picture>
+										<source
+											media=""
+											srcset="
+												./images/works/orange-girl.webp    1x,
+												./images/works/orange-girl@2x.webp 2x
+											"
+											type="image/webp"
+										/>
+										<source
+											media=""
+											srcset="
+												./images/works/orange-girl.jpg    1x,
+												./images/works/orange-girl@2x.jpg 2x
+											"
+										/>
+										<img
+											class="works-img"
+											src="./images/works/orange-girl.jpg"
+											alt="girl-headphones"
+										/>
+									</picture>
 									<p class="overlay">
 										14 Stylish and User-Friendly App Design Concepts · Task
 										Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -192,10 +415,28 @@
 						<li class="works-item">
 							<a href="" class="works-link link">
 								<div class="works-img-wrapper">
-									<img
-										class="works-img"
-										src="./images/works/stories.jpg"
-										alt="gray-stories" />
+									<picture>
+										<source
+											media=""
+											srcset="
+												./images/works/stories.webp    1x,
+												./images/works/stories@2x.webp 2x
+											"
+											type="image/webp"
+										/>
+										<source
+											media=""
+											srcset="
+												./images/works/stories.jpg    1x,
+												./images/works/stories@2x.jpg 2x
+											"
+										/>
+										<img
+											class="works-img"
+											src="./images/works/stories.jpg"
+											alt="gray-stories"
+										/>
+									</picture>
 									<p class="overlay">
 										14 Stylish and User-Friendly App Design Concepts · Task
 										Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -211,10 +452,28 @@
 						<li class="works-item">
 							<a href="" class="works-link link">
 								<div class="works-img-wrapper">
-									<img
-										class="works-img"
-										src="./images/works/food.jpg"
-										alt="green-food" />
+									<picture>
+										<source
+											media=""
+											srcset="
+												./images/works/food.webp    1x,
+												./images/works/food@2x.webp 2x
+											"
+											type="image/webp"
+										/>
+										<source
+											media=""
+											srcset="
+												./images/works/food.jpg    1x,
+												./images/works/food@2x.jpg 2x
+											"
+										/>
+										<img
+											class="works-img"
+											src="./images/works/food.jpg"
+											alt="green-food"
+										/>
+									</picture>
 									<p class="overlay">
 										14 Stylish and User-Friendly App Design Concepts · Task
 										Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -230,10 +489,28 @@
 						<li class="works-item">
 							<a href="" class="works-link link">
 								<div class="works-img-wrapper">
-									<img
-										class="works-img"
-										src="./images/works/milk-coffe.jpg"
-										alt="cup-coffe" />
+									<picture>
+										<source
+											media=""
+											srcset="
+												./images/works/milk-coffe.webp    1x,
+												./images/works/milk-coffe@2x.webp 2x
+											"
+											type="image/webp"
+										/>
+										<source
+											media=""
+											srcset="
+												./images/works/milk-coffe.jpg    1x,
+												./images/works/milk-coffe@2x.jpg 2x
+											"
+										/>
+										<img
+											class="works-img"
+											src="./images/works/milk-coffe.jpg"
+											alt="cup-coffe"
+										/>
+									</picture>
 									<p class="overlay">
 										14 Stylish and User-Friendly App Design Concepts · Task
 										Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -271,7 +548,8 @@
 										class="social-list-icon"
 										aria-label="icon-instagram"
 										height="24"
-										width="24">
+										width="24"
+									>
 										<use href="./images/icons.svg#icon-instagram"></use>
 									</svg>
 								</a>
@@ -282,7 +560,8 @@
 										class="social-list-icon"
 										aria-label="icon-instagram"
 										height="24"
-										width="24">
+										width="24"
+									>
 										<use href="./images/icons.svg#icon-twitter"></use>
 									</svg>
 								</a>
@@ -293,7 +572,8 @@
 										class="social-list-icon"
 										aria-label="icon-instagram"
 										height="24"
-										width="24">
+										width="24"
+									>
 										<use href="./images/icons.svg#icon-facebook"></use>
 									</svg>
 								</a>
@@ -304,7 +584,8 @@
 										class="social-list-icon"
 										aria-label="icon-linkedin"
 										height="24"
-										width="24">
+										width="24"
+									>
 										<use href="./images/icons.svg#icon-linkedin"></use>
 									</svg>
 								</a>
@@ -321,7 +602,8 @@
 								type="email"
 								name="user-email"
 								pattern="[a-zA-Z]+"
-								placeholder="E-mail" />
+								placeholder="E-mail"
+							/>
 						</label>
 						<button class="subscribe-btn" type="submit">
 							Subscribe
@@ -334,5 +616,6 @@
 			</div>
 		</footer>
 		<script src="js/portfolio.js" type="module"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
