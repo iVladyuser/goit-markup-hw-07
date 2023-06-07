@@ -130,6 +130,10 @@
 	gap: space-between;
 }
 
+.social-list-menu {
+	justify-content: space-between;
+}
+
 /*=================== hero =======================*/
 .hero {
 	padding-top: 112px;

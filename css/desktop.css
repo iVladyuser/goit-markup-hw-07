@@ -64,6 +64,10 @@
 }
 
 /*==================== in-progress =======================*/
+.in-progress {
+	padding-top: 0;
+	padding-bottom: 120px;
+}
 
 /*==================== our-team =========================*/
 .team-list {
